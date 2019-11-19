@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <h2>Edit recipe</h2>
+        <form method="POST" action=<%= "/recipes/#{@recipe.id}"%>>
+
+            <p>Name:</p><input type="text" name="name" value=<%= @recipe.name%>>
+            <p>Cook time:</p><input type="text" name="cook_time" value=<%= @recipe.cook_time%>>
+            <p>Ingredients:</p><input type="text" name="ingredients" value=<%= @recipe.ingredients%>><br>
+            <input type="hidden" name="_method" value="PATCH">
+            <input type="submit" id="Submit">
+
+        </form>
+           
+    </body>
+</html>
