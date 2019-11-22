@@ -1,0 +1,19 @@
+<h2> New Recipe</h2>
+
+<!-- Goes to the partial form -->
+<%# <%= erb :form%> 
+
+<form action='/recipes' method='post'>
+
+    <label> Name </label>
+    <input type="text" name="name" value="">
+    <br>
+    <label> Ingredients </label>
+    <input type="text" name="ingredients" value="">
+    <br>
+    <label> Cook Time </label>
+    <input type="text" name="cook_time" value="">
+    <br>
+
+    <button type="submit" name="">Yummy!</button>
+ </form>
